@@ -1,0 +1,28 @@
+{
+  "name": "tesla-v2",
+  "version": "2.0.0",
+  "description": "This is v2 of my Tesla website clone project. The goal here is to write cleaner and well-maintanable styling using TailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i tailwind.css -o tesla.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudiusAyadi/tesla-v2.git"
+  },
+  "keywords": [
+    "Tesla",
+    "clone",
+    "TailwindCSS",
+    "refactoring"
+  ],
+  "author": "Claudius A.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaudiusAyadi/tesla-v2/issues"
+  },
+  "homepage": "https://github.com/ClaudiusAyadi/tesla-v2#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
