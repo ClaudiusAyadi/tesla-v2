@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen overflow-y-scroll text-sm font-normal text-[#393c41];
+  font-family: "Gotham SSm", sans-serif;
+
+  scroll-snap-type: y mandatory;
+}
+
+@layer components {
+  .hero {
+    @apply h-screen overflow-x-hidden;
+    scroll-snap-align: start;
+  }
+
+  .menu {
+    @apply mx-10 flex justify-between pt-5 text-[#171a20];
+  }
+
+  .product {
+    @apply text-center font-medium text-white;
+  }
+
+  .xl-only {
+    @apply hidden xl:inline;
+  }
+
+  .title {
+    @apply m-auto text-4xl text-[#171a20]  md:text-[2.5rem];
+  }
+
+  .btn__wrapper {
+    @apply absolute bottom-20 left-1/2 flex -translate-x-1/2 flex-col gap-5 md:flex-row;
+  }
+
+  .btn {
+    @apply flex h-10 w-[80vw] max-w-sm items-center justify-center rounded-md border-[3px] text-center md:w-[16.5rem];
+  }
+
+  .btn-0 {
+    @apply flex h-10 w-[80vw] max-w-sm items-center justify-center rounded-md text-center md:w-[16.5rem];
+  }
+
+  .btn--order {
+    @apply bg-[#393c41] text-white;
+  }
+
+  .btn--drive {
+    @apply bg-slate-100;
+  }
+
+  .section {
+    @apply relative h-screen overflow-hidden bg-cover bg-center bg-no-repeat;
+    scroll-snap-align: start;
+  }
+
+  .model {
+    @apply absolute left-1/2 top-20 mt-28 flex -translate-x-1/2 flex-col whitespace-nowrap text-center xl:mt-12;
+  }
+
+  .inventory {
+    @apply cursor-pointer whitespace-nowrap  pt-2 underline underline-offset-4 hover:decoration-2;
+  }
+}
+
+.btn__wrapper {
+  transition: all 0.2s ease-in-out;
+  animation: moveInBottom 0.75s ease-out 0.75s;
+  animation-fill-mode: backwards;
+
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+  }
+}

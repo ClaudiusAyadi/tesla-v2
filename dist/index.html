@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesla Website UI Clone V2 | Claudius A.</title>
+    <link rel="stylesheet" href="tesla.css" />
+    <link href="https://fonts.cdnfonts.com/css/gotham-ssm" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="hero">
+      <video
+        autoplay
+        loop
+        muted
+        class="absolute left-0 top-0 -z-10 h-screen w-screen object-cover object-center"
+      >
+        <source src="assets/test-drive.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="relative z-30 h-full">
+        <header>
+          <div class="flex min-h-[3.2rem] items-center justify-center bg-white">
+            <p class="w-[90vw] text-center text-xs text-opacity-70">
+              Up to $7,500 tax credit available for Model Y and Model 3.
+              <a
+                href="https://www.tesla.com/support/incentives"
+                class="underline underline-offset-4 hover:decoration-2"
+                >Learn More</a
+              >
+            </p>
+          </div>
+
+          <div class="mx-5 flex justify-between pt-5 text-white xl:mx-10">
+            <h1>
+              <a href="/">
+                <svg
+                  class="w-32"
+                  viewBox="0 0 342 35"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </h1>
+
+            <div class="xl-only">
+              <ol class="flex gap-8">
+                <li class="products">
+                  <a href="https://www.tesla.com/models">Model S</a>
+                </li>
+                <li class="products">
+                  <a href="https://www.tesla.com/model3">Model 3</a>
+                </li>
+                <li class="products">
+                  <a href="https://www.tesla.com/modelx">Model X</a>
+                </li>
+                <li class="products">
+                  <a href="https://www.tesla.com/modely">Model Y</a>
+                </li>
+                <li class="products">
+                  <a href="https://www.tesla.com/solarroof">Solar Roof</a>
+                </li>
+                <li class="products">
+                  <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+                </li>
+                <li class="products">
+                  <a href="https://www.tesla.com/powerwall">Powerwall</a>
+                </li>
+              </ol>
+            </div>
+
+            <ol class="flex gap-8">
+              <li class="products xl-only">
+                <a href="https://www.tesla.com/powerwall">Shop</a>
+              </li>
+              <li class="products xl-only">
+                <a href="https://www.tesla.com/powerwall">Account</a>
+              </li>
+              <li class="products">
+                <a href="https://www.tesla.com/powerwall">Menu</a>
+              </li>
+            </ol>
+          </div>
+        </header>
+
+        <!-- EXPERIENCE -->
+        <section
+          class="z-30 mt-36 flex flex-col items-center justify-center gap-2 text-white md:gap-4 xl:mt-12"
+        >
+          <h2 class="m-auto text-4xl md:text-[2.5rem]">Experience Tesla</h2>
+          <p class="whitespace-nowrap">Schedule a Demo Drive Today</p>
+          <div class="btn__wrapper">
+            <a href="https://www.tesla.com/drive" class="btn">Demo Drive</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- MODEL 3 -->
+    <section class="section bg-model-3">
+      <nav class="menu">
+        <h1>
+          <a href="/">
+            <svg
+              class="w-32"
+              viewBox="0 0 342 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </h1>
+
+        <div class="xl-only">
+          <ol class="flex gap-8">
+            <li class="products">
+              <a href="https://www.tesla.com/models">Model S</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/model3">Model 3</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modelx">Model X</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modely">Model Y</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarroof">Solar Roof</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/powerwall">Powerwall</a>
+            </li>
+          </ol>
+        </div>
+
+        <ol class="flex gap-8">
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Shop</a>
+          </li>
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Account</a>
+          </li>
+          <li class="products">
+            <a href="https://www.tesla.com/powerwall">Menu</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="model">
+        <h2 class="title">Model 3</h2>
+        <p class="inventory">View Inventory</p>
+      </div>
+
+      <div class="btn__wrapper">
+        <a
+          class="btn-0 btn--order"
+          href="https://www.tesla.com/model3/design#overview"
+          >Order Now</a
+        >
+        <a href="https://www.tesla.com/drive" class="btn-0 btn--drive"
+          >Demo Drive</a
+        >
+      </div>
+    </section>
+
+    <!-- MODEL Y -->
+    <section class="section bg-model-y">
+      <nav class="menu">
+        <h1>
+          <a href="/">
+            <svg
+              class="w-32"
+              viewBox="0 0 342 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </h1>
+
+        <div class="xl-only">
+          <ol class="flex gap-8">
+            <li class="products">
+              <a href="https://www.tesla.com/models">Model S</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/model3">Model 3</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modelx">Model X</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modely">Model Y</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarroof">Solar Roof</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/powerwall">Powerwall</a>
+            </li>
+          </ol>
+        </div>
+
+        <ol class="flex gap-8">
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Shop</a>
+          </li>
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Account</a>
+          </li>
+          <li class="products">
+            <a href="https://www.tesla.com/powerwall">Menu</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="model">
+        <h2 class="title">Model Y</h2>
+        <p class="inventory">View Inventory</p>
+      </div>
+
+      <div class="btn__wrapper">
+        <a
+          class="btn-0 btn--order"
+          href="https://www.tesla.com/modely/design#overview"
+          >Order Now</a
+        >
+        <a href="https://www.tesla.com/drive" class="btn-0 btn--drive"
+          >Demo Drive</a
+        >
+      </div>
+    </section>
+
+    <!-- MODEL S -->
+    <section class="section bg-model-s">
+      <nav class="menu">
+        <h1>
+          <a href="/">
+            <svg
+              class="w-32"
+              viewBox="0 0 342 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </h1>
+
+        <div class="xl-only">
+          <ol class="flex gap-8">
+            <li class="products">
+              <a href="https://www.tesla.com/models">Model S</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/model3">Model 3</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modelx">Model X</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modely">Model Y</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarroof">Solar Roof</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/powerwall">Powerwall</a>
+            </li>
+          </ol>
+        </div>
+
+        <ol class="flex gap-8">
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Shop</a>
+          </li>
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Account</a>
+          </li>
+          <li class="products">
+            <a href="https://www.tesla.com/powerwall">Menu</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="model">
+        <h2 class="title">Model S</h2>
+        <p class="inventory">View Inventory</p>
+      </div>
+
+      <div class="btn__wrapper">
+        <a
+          class="btn-0 btn--order"
+          href="https://www.tesla.com/models/design#overview"
+          >Order Now</a
+        >
+        <a href="https://www.tesla.com/drive" class="btn-0 btn--drive"
+          >Demo Drive</a
+        >
+      </div>
+    </section>
+
+    <!-- MODEL X -->
+    <section class="section bg-model-x">
+      <nav class="menu">
+        <h1>
+          <a href="/">
+            <svg
+              class="w-32"
+              viewBox="0 0 342 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </h1>
+
+        <div class="xl-only">
+          <ol class="flex gap-8">
+            <li class="products">
+              <a href="https://www.tesla.com/models">Model S</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/model3">Model 3</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modelx">Model X</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modely">Model Y</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarroof">Solar Roof</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/powerwall">Powerwall</a>
+            </li>
+          </ol>
+        </div>
+
+        <ol class="flex gap-8">
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Shop</a>
+          </li>
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Account</a>
+          </li>
+          <li class="products">
+            <a href="https://www.tesla.com/powerwall">Menu</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="model">
+        <h2 class="title">Model X</h2>
+        <p class="inventory">View Inventory</p>
+      </div>
+
+      <div class="btn__wrapper">
+        <a
+          class="btn-0 btn--order"
+          href="https://www.tesla.com/modelx/design#overview"
+          >Order Now</a
+        >
+        <a
+          href="https://www.tesla.com/drive"
+          class="btn-0 btn--drive bg-slate-300"
+          >Demo Drive</a
+        >
+      </div>
+    </section>
+
+    <!-- SOLAR PANELS -->
+    <section class="section bg-solar-panels">
+      <nav class="menu">
+        <h1>
+          <a href="/">
+            <svg
+              class="w-32"
+              viewBox="0 0 342 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </h1>
+
+        <div class="xl-only">
+          <ol class="flex gap-8">
+            <li class="products">
+              <a href="https://www.tesla.com/models">Model S</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/model3">Model 3</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modelx">Model X</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modely">Model Y</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarroof">Solar Roof</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/powerwall">Powerwall</a>
+            </li>
+          </ol>
+        </div>
+
+        <ol class="flex gap-8">
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Shop</a>
+          </li>
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Account</a>
+          </li>
+          <li class="products">
+            <a href="https://www.tesla.com/powerwall">Menu</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="model">
+        <h2 class="title">Solar Panels</h2>
+        <p class="pt-2">Lowest Cost Solar Panels in America</p>
+      </div>
+
+      <div class="btn__wrapper">
+        <a class="btn-0 btn--order" href="https://www.tesla.com/energy/design"
+          >Order Now</a
+        >
+        <a
+          href="https://www.tesla.com/solarpanels"
+          class="btn-0 btn--drive bg-slate-300"
+          >Learn More</a
+        >
+      </div>
+    </section>
+
+    <!-- SOLAR ROOF -->
+    <section class="section bg-solar-panels">
+      <nav class="menu">
+        <h1>
+          <a href="/">
+            <svg
+              class="w-32"
+              viewBox="0 0 342 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </h1>
+
+        <div class="xl-only">
+          <ol class="flex gap-8">
+            <li class="products">
+              <a href="https://www.tesla.com/models">Model S</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/model3">Model 3</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modelx">Model X</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modely">Model Y</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarroof">Solar Roof</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/powerwall">Powerwall</a>
+            </li>
+          </ol>
+        </div>
+
+        <ol class="flex gap-8">
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Shop</a>
+          </li>
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Account</a>
+          </li>
+          <li class="products">
+            <a href="https://www.tesla.com/powerwall">Menu</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="model">
+        <h2 class="title">Solar Roof</h2>
+        <p class="pt-2">Produce Clean Energy From Your Roof</p>
+      </div>
+
+      <div class="btn__wrapper">
+        <a
+          class="btn-0 btn--order"
+          href="https://www.tesla.com/solarroof/design"
+          >Order Now</a
+        >
+        <a
+          href="https://www.tesla.com/solarroof"
+          class="btn-0 btn--drive bg-slate-300"
+          >Learn More</a
+        >
+      </div>
+    </section>
+
+    <!-- ACCESSORY -->
+    <section class="section bg-accessories">
+      <nav class="menu">
+        <h1>
+          <a href="/">
+            <svg
+              class="w-32"
+              viewBox="0 0 342 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </h1>
+
+        <div class="xl-only">
+          <ol class="flex gap-8">
+            <li class="products">
+              <a href="https://www.tesla.com/models">Model S</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/model3">Model 3</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modelx">Model X</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/modely">Model Y</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarroof">Solar Roof</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+            </li>
+            <li class="products">
+              <a href="https://www.tesla.com/powerwall">Powerwall</a>
+            </li>
+          </ol>
+        </div>
+
+        <ol class="flex gap-8">
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Shop</a>
+          </li>
+          <li class="products xl-only">
+            <a href="https://www.tesla.com/powerwall">Account</a>
+          </li>
+          <li class="products">
+            <a href="https://www.tesla.com/powerwall">Menu</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="model">
+        <h2 class="title">Accessories</h2>
+      </div>
+
+      <div class="btn__wrapper">
+        <a
+          class="btn-0 btn--order bg-[#171a20] blur-0"
+          href="https://www.tesla.com/shop?tesref=true"
+          >Shop Now</a
+        >
+      </div>
+    </section>
+
+    <footer
+      class="flex items-center justify-center pb-10 text-xs text-[#5c5e62]"
+    >
+      <ul class="flex flex-col items-center space-x-4 font-medium md:flex-row">
+        <li>
+          <a href="https://www.tesla.com/about">Tesla Inc. &copy; 2023</a>
+        </li>
+        <li>
+          <a href="https://www.tesla.com/legal">Privacy & Legal</a>
+        </li>
+        <li>
+          <a href="https://www.tesla.com/vin-recall-search">Vehicle Recalls</a>
+        </li>
+        <li class="hidden md:inline">
+          <a href="https://www.tesla.com/contact">Contact</a>
+        </li>
+        <li class="hidden md:inline">
+          <a href="https://www.tesla.com/careers">Careers</a>
+        </li>
+        <li>
+          <a href="https://www.tesla.com/blog">News</a>
+        </li>
+        <li class="hidden md:inline">
+          <a href="https://engage.tesla.com/">Engage</a>
+        </li>
+        <li class="hidden md:inline">
+          <a href="https://www.tesla.com/findus/list">Locations</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
